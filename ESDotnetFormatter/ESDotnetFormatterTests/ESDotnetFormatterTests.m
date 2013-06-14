@@ -53,5 +53,15 @@
     }
 }
 
+-(void)testDatesAreNotSupported
+{
+    NSString* result = nil;
+    NSDate* nowDate = [ NSDate new ];
+    
+    
+    result = [ NSString stringWithDotnetFormat: @"A {0} fox {1} over a {2} dog"
+                                          args: @[ @(42), @(13), nowDate ] ];
+    STAssertNil( result, @"Dates are not supported" );
+}
 
 @end

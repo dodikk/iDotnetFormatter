@@ -4,9 +4,38 @@
 
 @implementation ESDotnetStringFormatter
 
+-(BOOL)argsContainDates:( NSArray* )args
+{
+    Class dateClass = [ NSDate class ];
+    NSUInteger dateIndex = [ args indexOfObjectPassingTest:^BOOL(id obj, NSUInteger idx, BOOL *stop)
+    {
+        if ( [ obj isKindOfClass: dateClass ] )
+        {
+            *stop = YES;
+            return YES;
+        }
+        
+        return NO;
+    } ];
+    BOOL isNoDates = ( NSNotFound == dateIndex );
+    return !isNoDates;
+}
+
 -(NSString*)formatString:( NSString* )string
                usingArgs:( NSArray* )args
 {
+    if ( nil == args )
+    {
+        return string;
+    }
+    
+    BOOL argsHaveDates = [ self argsContainDates: args ];
+    if ( argsHaveDates )
+    {
+        return nil;
+    }
+
+    
     NSMutableString* result = [ string mutableCopy ];
 
     NSUInteger argsCount = [ args count ];
