@@ -33,8 +33,8 @@
     NSString* expected = nil;
 
     {
-        expected = @"A quick fox jumps over a lazy dog";
-        result = [ NSString stringWithDotnetFormat: @"A {0} fox {1} over a {2} dog"
+        expected = @"A quick brown fox jumps over a lazy dog";
+        result = [ NSString stringWithDotnetFormat: @"A {0} brown fox {1} over a {2} dog"
                                               args: @[ @"quick", @"jumps", @"lazy" ] ];
         STAssertEqualObjects( result, expected, @"unused params must be ignored" );
     }
@@ -63,5 +63,34 @@
                                           args: @[ @(42), @(13), nowDate ] ];
     STAssertNil( result, @"Dates are not supported" );
 }
+
+-(void)testReordering
+{
+    NSString* result = nil;
+    NSString* expected = nil;
+    
+    {
+        expected = @"A quick brown dog jumps over a lazy fox";
+        result = [ NSString stringWithDotnetFormat: @"A quick brown {1} jumps over a lazy {0}"
+                                              args: @[ @"fox", @"dog" ] ];
+        STAssertEqualObjects( result, expected, @"unused params must be ignored" );
+    }
+    
+}
+
+-(void)testMultipleOccurences
+{
+    NSString* result = nil;
+    NSString* expected = nil;
+    
+    {
+        expected = @"A quick brown dog jumps over a lazy dog";
+        result = [ NSString stringWithDotnetFormat: @"A quick brown {1} jumps over a lazy {1}"
+                                              args: @[ @"fox", @"dog" ] ];
+        STAssertEqualObjects( result, expected, @"unused params must be ignored" );
+    }
+    
+}
+
 
 @end
