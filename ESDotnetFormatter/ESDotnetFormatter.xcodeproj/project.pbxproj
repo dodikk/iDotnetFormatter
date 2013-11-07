@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E8488DB182B7AB3008A4FCA /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E8488DA182B7AB3008A4FCA /* libc++.dylib */; };
+		7E8488DC182B7ABA008A4FCA /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E8488DA182B7AB3008A4FCA /* libc++.dylib */; };
 		7E994903176B0974005F316B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E994902176B0974005F316B /* Foundation.framework */; };
 		7E994908176B0974005F316B /* ESDotnetFormatter.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7E994907176B0974005F316B /* ESDotnetFormatter.h */; };
 		7E994912176B0974005F316B /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E994911176B0974005F316B /* SenTestingKit.framework */; };
@@ -14,7 +16,7 @@
 		7E994918176B0974005F316B /* libESDotnetFormatter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E9948FF176B0974005F316B /* libESDotnetFormatter.a */; };
 		7E99491E176B0974005F316B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7E99491C176B0974005F316B /* InfoPlist.strings */; };
 		7E994921176B0974005F316B /* ESDotnetFormatterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E994920176B0974005F316B /* ESDotnetFormatterTests.m */; };
-		7E99492D176B0B67005F316B /* ESDotnetStringFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E99492C176B0B67005F316B /* ESDotnetStringFormatter.m */; };
+		7E99492D176B0B67005F316B /* ESDotnetStringFormatter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E99492C176B0B67005F316B /* ESDotnetStringFormatter.mm */; };
 		7E994930176B0D79005F316B /* NSString+DotnetFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E99492F176B0D79005F316B /* NSString+DotnetFormat.m */; };
 		7E994938176B109F005F316B /* ESDotnetFormatterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E994920176B0974005F316B /* ESDotnetFormatterTests.m */; };
 		7E99493A176B109F005F316B /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E994911176B0974005F316B /* SenTestingKit.framework */; };
@@ -55,6 +57,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		7E8488DA182B7AB3008A4FCA /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
 		7E9948FF176B0974005F316B /* libESDotnetFormatter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libESDotnetFormatter.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E994902176B0974005F316B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7E994906176B0974005F316B /* ESDotnetFormatter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ESDotnetFormatter-Prefix.pch"; sourceTree = "<group>"; };
@@ -68,7 +71,7 @@
 		7E994920176B0974005F316B /* ESDotnetFormatterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ESDotnetFormatterTests.m; sourceTree = "<group>"; };
 		7E99492A176B09D6005F316B /* ESStringFormatter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ESStringFormatter.h; sourceTree = "<group>"; };
 		7E99492B176B0B67005F316B /* ESDotnetStringFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESDotnetStringFormatter.h; sourceTree = "<group>"; };
-		7E99492C176B0B67005F316B /* ESDotnetStringFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESDotnetStringFormatter.m; sourceTree = "<group>"; };
+		7E99492C176B0B67005F316B /* ESDotnetStringFormatter.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ESDotnetStringFormatter.mm; sourceTree = "<group>"; };
 		7E99492E176B0D79005F316B /* NSString+DotnetFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DotnetFormat.h"; sourceTree = "<group>"; };
 		7E99492F176B0D79005F316B /* NSString+DotnetFormat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DotnetFormat.m"; sourceTree = "<group>"; };
 		7E994944176B109F005F316B /* ESDotnetFormatterTests-CI.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ESDotnetFormatterTests-CI.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -90,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E8488DB182B7AB3008A4FCA /* libc++.dylib in Frameworks */,
 				7E994912176B0974005F316B /* SenTestingKit.framework in Frameworks */,
 				7E994915176B0974005F316B /* Foundation.framework in Frameworks */,
 				7E994918176B0974005F316B /* libESDotnetFormatter.a in Frameworks */,
@@ -100,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E8488DC182B7ABA008A4FCA /* libc++.dylib in Frameworks */,
 				7E99493A176B109F005F316B /* SenTestingKit.framework in Frameworks */,
 				7E99493B176B109F005F316B /* Foundation.framework in Frameworks */,
 				7E99493C176B109F005F316B /* libESDotnetFormatter.a in Frameworks */,
@@ -133,6 +138,7 @@
 		7E994901176B0974005F316B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7E8488DA182B7AB3008A4FCA /* libc++.dylib */,
 				7E994902176B0974005F316B /* Foundation.framework */,
 				7E994911176B0974005F316B /* SenTestingKit.framework */,
 				7E994913176B0974005F316B /* UIKit.framework */,
@@ -149,7 +155,7 @@
 				7E99492E176B0D79005F316B /* NSString+DotnetFormat.h */,
 				7E99492F176B0D79005F316B /* NSString+DotnetFormat.m */,
 				7E99492B176B0B67005F316B /* ESDotnetStringFormatter.h */,
-				7E99492C176B0B67005F316B /* ESDotnetStringFormatter.m */,
+				7E99492C176B0B67005F316B /* ESDotnetStringFormatter.mm */,
 				B0EFD22DD06FB43C3245245B /* DotnetExtensions */,
 			);
 			path = ESDotnetFormatter;
@@ -330,7 +336,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7E99492D176B0B67005F316B /* ESDotnetStringFormatter.m in Sources */,
+				7E99492D176B0B67005F316B /* ESDotnetStringFormatter.mm in Sources */,
 				7E994930176B0D79005F316B /* NSString+DotnetFormat.m in Sources */,
 				B0EFDDA4333BF47B137E9CAA /* NSObject+DotnetString.m in Sources */,
 			);
@@ -383,6 +389,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_ANALYZER_SECURITY_FLOATLOOPCOUNTER = YES;
 				CLANG_ANALYZER_SECURITY_INSECUREAPI_RAND = YES;
 				CLANG_ANALYZER_SECURITY_INSECUREAPI_STRCPY = YES;
@@ -416,7 +423,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = .;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-all_load";
 				SDKROOT = iphoneos;
@@ -427,6 +434,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_ANALYZER_SECURITY_FLOATLOOPCOUNTER = YES;
 				CLANG_ANALYZER_SECURITY_INSECUREAPI_RAND = YES;
 				CLANG_ANALYZER_SECURITY_INSECUREAPI_STRCPY = YES;
@@ -453,7 +461,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = .;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OTHER_LDFLAGS = "-all_load";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -520,6 +528,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_ANALYZER_SECURITY_FLOATLOOPCOUNTER = YES;
 				CLANG_ANALYZER_SECURITY_INSECUREAPI_RAND = YES;
 				CLANG_ANALYZER_SECURITY_INSECUREAPI_STRCPY = YES;
@@ -555,7 +564,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = .;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-all_load";
 				SDKROOT = iphoneos;

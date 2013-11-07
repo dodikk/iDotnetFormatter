@@ -43,7 +43,7 @@
     {
         // @adk - this is not an invariant. Do not extract
         NSRange allString = { 0, [ result length ] };
-        NSString* argFormat = [ NSString stringWithFormat: @"{%d}", i ];
+        NSString* argFormat = [ NSString stringWithFormat: @"{%lu}", static_cast<unsigned long>(i) ];
 
         NSObject* currentArg = args[i];
         NSString* argValue = [ currentArg dotnetString ];
