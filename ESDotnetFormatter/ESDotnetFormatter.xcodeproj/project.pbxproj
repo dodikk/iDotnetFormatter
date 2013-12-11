@@ -7,34 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E7FDEE618571FAD0025FD61 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E7FDEE418571F5B0025FD61 /* XCTest.framework */; };
 		7E8488DB182B7AB3008A4FCA /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E8488DA182B7AB3008A4FCA /* libc++.dylib */; };
-		7E8488DC182B7ABA008A4FCA /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E8488DA182B7AB3008A4FCA /* libc++.dylib */; };
 		7E994903176B0974005F316B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E994902176B0974005F316B /* Foundation.framework */; };
 		7E994908176B0974005F316B /* ESDotnetFormatter.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7E994907176B0974005F316B /* ESDotnetFormatter.h */; };
-		7E994912176B0974005F316B /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E994911176B0974005F316B /* SenTestingKit.framework */; };
 		7E994915176B0974005F316B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E994902176B0974005F316B /* Foundation.framework */; };
 		7E994918176B0974005F316B /* libESDotnetFormatter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E9948FF176B0974005F316B /* libESDotnetFormatter.a */; };
 		7E99491E176B0974005F316B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7E99491C176B0974005F316B /* InfoPlist.strings */; };
 		7E994921176B0974005F316B /* ESDotnetFormatterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E994920176B0974005F316B /* ESDotnetFormatterTests.m */; };
 		7E99492D176B0B67005F316B /* ESDotnetStringFormatter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7E99492C176B0B67005F316B /* ESDotnetStringFormatter.mm */; };
 		7E994930176B0D79005F316B /* NSString+DotnetFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E99492F176B0D79005F316B /* NSString+DotnetFormat.m */; };
-		7E994938176B109F005F316B /* ESDotnetFormatterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E994920176B0974005F316B /* ESDotnetFormatterTests.m */; };
-		7E99493A176B109F005F316B /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E994911176B0974005F316B /* SenTestingKit.framework */; };
-		7E99493B176B109F005F316B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E994902176B0974005F316B /* Foundation.framework */; };
-		7E99493C176B109F005F316B /* libESDotnetFormatter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E9948FF176B0974005F316B /* libESDotnetFormatter.a */; };
-		7E99493E176B109F005F316B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7E99491C176B0974005F316B /* InfoPlist.strings */; };
 		B0EFDDA4333BF47B137E9CAA /* NSObject+DotnetString.m in Sources */ = {isa = PBXBuildFile; fileRef = B0EFD3AA34FFC47686E30604 /* NSObject+DotnetString.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		7E994916176B0974005F316B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7E9948F7176B0974005F316B /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7E9948FE176B0974005F316B;
-			remoteInfo = ESDotnetFormatter;
-		};
-		7E994936176B109F005F316B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 7E9948F7176B0974005F316B /* Project object */;
 			proxyType = 1;
@@ -57,13 +44,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		7E7FDEE418571F5B0025FD61 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		7E8488DA182B7AB3008A4FCA /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
 		7E9948FF176B0974005F316B /* libESDotnetFormatter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libESDotnetFormatter.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E994902176B0974005F316B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7E994906176B0974005F316B /* ESDotnetFormatter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ESDotnetFormatter-Prefix.pch"; sourceTree = "<group>"; };
 		7E994907176B0974005F316B /* ESDotnetFormatter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ESDotnetFormatter.h; sourceTree = "<group>"; };
-		7E994910176B0974005F316B /* ESDotnetFormatterTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ESDotnetFormatterTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7E994911176B0974005F316B /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		7E994910176B0974005F316B /* ESDotnetFormatterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ESDotnetFormatterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E994913176B0974005F316B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		7E99491B176B0974005F316B /* ESDotnetFormatterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ESDotnetFormatterTests-Info.plist"; sourceTree = "<group>"; };
 		7E99491D176B0974005F316B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -74,7 +61,6 @@
 		7E99492C176B0B67005F316B /* ESDotnetStringFormatter.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ESDotnetStringFormatter.mm; sourceTree = "<group>"; };
 		7E99492E176B0D79005F316B /* NSString+DotnetFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DotnetFormat.h"; sourceTree = "<group>"; };
 		7E99492F176B0D79005F316B /* NSString+DotnetFormat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DotnetFormat.m"; sourceTree = "<group>"; };
-		7E994944176B109F005F316B /* ESDotnetFormatterTests-CI.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ESDotnetFormatterTests-CI.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E994945176B10A0005F316B /* ESDotnetFormatterTests copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "ESDotnetFormatterTests copy-Info.plist"; path = "/Volumes/NO NAME/Mobile/Mobile SDK/lib-third-party/iDotnetFormatter/ESDotnetFormatter/ESDotnetFormatterTests copy-Info.plist"; sourceTree = "<absolute>"; };
 		B0EFD3AA34FFC47686E30604 /* NSObject+DotnetString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+DotnetString.m"; sourceTree = "<group>"; };
 		B0EFD82B43F22163DCD52D2D /* NSObject+DotnetString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+DotnetString.h"; sourceTree = "<group>"; };
@@ -93,21 +79,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E7FDEE618571FAD0025FD61 /* XCTest.framework in Frameworks */,
 				7E8488DB182B7AB3008A4FCA /* libc++.dylib in Frameworks */,
-				7E994912176B0974005F316B /* SenTestingKit.framework in Frameworks */,
 				7E994915176B0974005F316B /* Foundation.framework in Frameworks */,
 				7E994918176B0974005F316B /* libESDotnetFormatter.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7E994939176B109F005F316B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7E8488DC182B7ABA008A4FCA /* libc++.dylib in Frameworks */,
-				7E99493A176B109F005F316B /* SenTestingKit.framework in Frameworks */,
-				7E99493B176B109F005F316B /* Foundation.framework in Frameworks */,
-				7E99493C176B109F005F316B /* libESDotnetFormatter.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -129,8 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				7E9948FF176B0974005F316B /* libESDotnetFormatter.a */,
-				7E994910176B0974005F316B /* ESDotnetFormatterTests.octest */,
-				7E994944176B109F005F316B /* ESDotnetFormatterTests-CI.octest */,
+				7E994910176B0974005F316B /* ESDotnetFormatterTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -138,9 +112,9 @@
 		7E994901176B0974005F316B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7E7FDEE418571F5B0025FD61 /* XCTest.framework */,
 				7E8488DA182B7AB3008A4FCA /* libc++.dylib */,
 				7E994902176B0974005F316B /* Foundation.framework */,
-				7E994911176B0974005F316B /* SenTestingKit.framework */,
 				7E994913176B0974005F316B /* UIKit.framework */,
 			);
 			name = Frameworks;
@@ -233,27 +207,8 @@
 			);
 			name = ESDotnetFormatterTests;
 			productName = ESDotnetFormatterTests;
-			productReference = 7E994910176B0974005F316B /* ESDotnetFormatterTests.octest */;
-			productType = "com.apple.product-type.bundle";
-		};
-		7E994934176B109F005F316B /* ESDotnetFormatterTests-CI */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7E994940176B109F005F316B /* Build configuration list for PBXNativeTarget "ESDotnetFormatterTests-CI" */;
-			buildPhases = (
-				7E994937176B109F005F316B /* Sources */,
-				7E994939176B109F005F316B /* Frameworks */,
-				7E99493D176B109F005F316B /* Resources */,
-				7E99493F176B109F005F316B /* ShellScript */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				7E994935176B109F005F316B /* PBXTargetDependency */,
-			);
-			name = "ESDotnetFormatterTests-CI";
-			productName = ESDotnetFormatterTests;
-			productReference = 7E994944176B109F005F316B /* ESDotnetFormatterTests-CI.octest */;
-			productType = "com.apple.product-type.bundle";
+			productReference = 7E994910176B0974005F316B /* ESDotnetFormatterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -278,7 +233,6 @@
 			targets = (
 				7E9948FE176B0974005F316B /* ESDotnetFormatter */,
 				7E99490F176B0974005F316B /* ESDotnetFormatterTests */,
-				7E994934176B109F005F316B /* ESDotnetFormatterTests-CI */,
 			);
 		};
 /* End PBXProject section */
@@ -292,31 +246,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7E99493D176B109F005F316B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7E99493E176B109F005F316B /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
 		7E99490E176B0974005F316B /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
-		};
-		7E99493F176B109F005F316B /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -350,14 +283,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7E994937176B109F005F316B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7E994938176B109F005F316B /* ESDotnetFormatterTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -365,11 +290,6 @@
 			isa = PBXTargetDependency;
 			target = 7E9948FE176B0974005F316B /* ESDotnetFormatter */;
 			targetProxy = 7E994916176B0974005F316B /* PBXContainerItemProxy */;
-		};
-		7E994935176B109F005F316B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 7E9948FE176B0974005F316B /* ESDotnetFormatter */;
-			targetProxy = 7E994936176B109F005F316B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -498,13 +418,14 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ESDotnetFormatter/ESDotnetFormatter-Prefix.pch";
 				GCC_WARN_PEDANTIC = NO;
 				INFOPLIST_FILE = "ESDotnetFormatterTests/ESDotnetFormatterTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
 		};
@@ -514,13 +435,14 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ESDotnetFormatter/ESDotnetFormatter-Prefix.pch";
 				GCC_WARN_PEDANTIC = NO;
 				INFOPLIST_FILE = "ESDotnetFormatterTests/ESDotnetFormatterTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
 		};
@@ -589,66 +511,16 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ESDotnetFormatter/ESDotnetFormatter-Prefix.pch";
 				GCC_WARN_PEDANTIC = NO;
 				INFOPLIST_FILE = "ESDotnetFormatterTests/ESDotnetFormatterTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Coverage;
-		};
-		7E994941176B109F005F316B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
-					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ESDotnetFormatter/ESDotnetFormatter-Prefix.pch";
-				GCC_WARN_PEDANTIC = NO;
-				INFOPLIST_FILE = "ESDotnetFormatterTests copy-Info.plist";
-				PRODUCT_NAME = "ESDotnetFormatterTests-CI";
-				TEST_AFTER_BUILD = YES;
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Debug;
-		};
-		7E994942176B109F005F316B /* Coverage */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
-					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ESDotnetFormatter/ESDotnetFormatter-Prefix.pch";
-				GCC_WARN_PEDANTIC = NO;
-				INFOPLIST_FILE = "ESDotnetFormatterTests copy-Info.plist";
-				PRODUCT_NAME = "ESDotnetFormatterTests-CI";
-				TEST_AFTER_BUILD = YES;
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Coverage;
-		};
-		7E994943176B109F005F316B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
-					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ESDotnetFormatter/ESDotnetFormatter-Prefix.pch";
-				GCC_WARN_PEDANTIC = NO;
-				INFOPLIST_FILE = "ESDotnetFormatterTests copy-Info.plist";
-				PRODUCT_NAME = "ESDotnetFormatterTests-CI";
-				TEST_AFTER_BUILD = YES;
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
@@ -679,16 +551,6 @@
 				7E994928176B0974005F316B /* Debug */,
 				7E994933176B0FE6005F316B /* Coverage */,
 				7E994929176B0974005F316B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7E994940176B109F005F316B /* Build configuration list for PBXNativeTarget "ESDotnetFormatterTests-CI" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7E994941176B109F005F316B /* Debug */,
-				7E994942176B109F005F316B /* Coverage */,
-				7E994943176B109F005F316B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
