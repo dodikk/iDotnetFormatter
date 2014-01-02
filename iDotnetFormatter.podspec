@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name         = "ESDotnetFormatter"
+  s.name         = "iDotnetFormatter"
   s.version      = "1.0"
   s.summary      = "A library to format strings in .NET style."
   s.description  = "A library to format strings in .NET style. It may be useful for localization and porting (rewriting) .NET applications to Objective-C"
@@ -12,10 +12,10 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '6.0'
 
 
-  s.ios.header_mappings_dir = 'ESDotnetFormatter'
-  s.ios.source_files = "ESDotnetFormatter/**/*.{c,cpp,mm,h,m}"
-  s.ios.prefix_header_file = 'ESDotnetFormatter/ESDotnetFormatter-Prefix.pch'
+  s.ios.header_mappings_dir = 'ESDotnetFormatter/ESDotnetFormatter'
+  s.ios.source_files = "ESDotnetFormatter/ESDotnetFormatter/**/*.{c,cpp,mm,h,m}"
+  s.ios.prefix_header_file = 'ESDotnetFormatter/ESDotnetFormatter/ESDotnetFormatter-Prefix.pch'
     
   s.ios.frameworks = 'Foundation'
-  s.ios.libraries = 'sqlite3', 'c++', 'stdc++'
+  s.ios.libraries = 'c++', 'stdc++'
 end
