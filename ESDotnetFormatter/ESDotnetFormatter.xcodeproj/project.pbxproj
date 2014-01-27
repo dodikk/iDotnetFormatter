@@ -45,6 +45,7 @@
 
 /* Begin PBXFileReference section */
 		7E7FDEE418571F5B0025FD61 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		7E8117A8188FC73B002FC987 /* libXCode5gcovPatch.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libXCode5gcovPatch.a; sourceTree = "<group>"; };
 		7E8488DA182B7AB3008A4FCA /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
 		7E9948FF176B0974005F316B /* libESDotnetFormatter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libESDotnetFormatter.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E994902176B0974005F316B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -112,6 +113,7 @@
 		7E994901176B0974005F316B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7E8117A8188FC73B002FC987 /* libXCode5gcovPatch.a */,
 				7E7FDEE418571F5B0025FD61 /* XCTest.framework */,
 				7E8488DA182B7AB3008A4FCA /* libc++.dylib */,
 				7E994902176B0974005F316B /* Foundation.framework */,
@@ -425,6 +427,10 @@
 				GCC_PREFIX_HEADER = "ESDotnetFormatter/ESDotnetFormatter-Prefix.pch";
 				GCC_WARN_PEDANTIC = NO;
 				INFOPLIST_FILE = "ESDotnetFormatterTests/ESDotnetFormatterTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Volumes/untitled/projects/lib-third-party/iDotnetFormatter/ESDotnetFormatter",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -442,6 +448,10 @@
 				GCC_PREFIX_HEADER = "ESDotnetFormatter/ESDotnetFormatter-Prefix.pch";
 				GCC_WARN_PEDANTIC = NO;
 				INFOPLIST_FILE = "ESDotnetFormatterTests/ESDotnetFormatterTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Volumes/untitled/projects/lib-third-party/iDotnetFormatter/ESDotnetFormatter",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -518,6 +528,15 @@
 				GCC_PREFIX_HEADER = "ESDotnetFormatter/ESDotnetFormatter-Prefix.pch";
 				GCC_WARN_PEDANTIC = NO;
 				INFOPLIST_FILE = "ESDotnetFormatterTests/ESDotnetFormatterTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Volumes/untitled/projects/lib-third-party/iDotnetFormatter/ESDotnetFormatter",
+				);
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-lXCode5gcovPatch",
+					"-L.",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Coverage;
